@@ -9,110 +9,108 @@ Guide and framework for creating ChatGPT3 Prompts
 This repo was developed by [@mattnigh](https://github.com/mattnigh). 
 Follow or connect with me on [my LinkedIn](https://www.linkedin.com/in/mattnigh/). 
 
-### What is Prompt Engineering? 
+### Prompt Mühendisliği Nedir?
 
-Prompt engineering is the process of designing and refining the initial text or input (the prompt) that is given to a language model like ChatGPT to generate a response. It involves designing prompts that guide the model to generate a specific tone, style, or type of content.
+Prompt mühendisliği, ChatGPT gibi bir dil modeline yanıt üretmek için verilen ilk metin veya giriş (prompt) tasarlamak ve geliştirmek için yapılan bir süreçtir. Bu süreç, modelin belirli bir ton, tarz veya içerik türü üretmesine yol gösteren ipuçları tasarlamayı içerir.
 
-## Prompt Engineering: The Basics
+## Prompt Mühendisliği: Temel İlkeler
 
-- Use literal and explicit language
-- Ask the model to act as if is an expert of the subject
-- Ask the model to act as if it is a specific person, or combination of people 
-- Ask the model to think 'step-by-step', especially in medium to complex tasks
-- Experiment with outputs, `Give me 10 different examples`
-- Refine the results, `Rewrite this to be more engaging, use clearer language, and use bullets to make it more readable.`
+- Somut ve açık bir dil kullanın.
+- Modelin konunun uzmanıymış gibi davranmasını isteyin.
+- Modelin belirli bir kişi veya kişilerin bir kombinasyonu gibi davranmasını isteyin.
+- Orta düzeyden karmaşık görevlere özellikle 'adım adım' düşünmesini isteyin.
+- Çıktılarla deney yapın, Bana 10 farklı örnek verin.
+- Sonuçları geliştirin, Bu daha çekici olacak şekilde yeniden yazın, daha açık bir dil kullanın ve daha okunaklı hale getirmek için madde işaretleri kullanın.
 
-## When not to use Prompt Engineering or ChatGPT
+## Prompt Mühendisliği veya ChatGPT Kullanmamanız Gereken Durumlar
 
-- When you need 100% reliability
-- When you have no way to evaluate the accuracy of the model's output
-- When you need to generate content that is not in the model's training data
+- %100 güvenilirliğe ihtiyaç duyduğunuz zamanlar
+- Modelin çıktısının doğruluğunu değerlendirmenin bir yolunun olmadığı zamanlar
+- Modelin eğitim verilerinde olmayan içerikler oluşturmanız gerektiği zamanlar
 
 ----
 
-# Creating ChatGPT Prompts: A Framework
+# ChatGPT Promptları Oluşturma: Çatı
 
-Using a prompt framework when creating prompts for ChatGPT. Frameworks provides structure and clarity to the prompt creation process. It breaks prompt creation process into clear and distinct steps. I created the below framework (CRISPE) for my own use and experimentation of ChatGPT.
+ChatGPT için prompt oluştururken bir prompt çerçevesi kullanmak faydalı olabilir. Çerçeveler, prompt oluşturma sürecine yapısal bir çerçeve ve netlik sağlar. Prompt oluşturma sürecini net ve belirgin adımlara ayırır. ChatGPT ile kendi kullanımım ve denemelerim için aşağıdaki çerçeveyi (CRISPE) oluşturdum.
 
 ### CRISPE Prompt Framework:
 
-- **Capacity and Role:** What role (or roles) should ChatGPT act as?  
-- **Insight:** Provides the behind the scenes insight, background, and context to your request.
-- **Statement:** What you are asking ChatGPT to do.
-- **Personality:** The style, personality, or manner you want ChatGPT to respond in.
-- **Experiment:** Asking ChatGPT to provide multiple examples to you.
+- **Kapasite ve Rol:** ChatGPT hangi rol(ler) üstlenecek?  
+- **Kavrayış:** Talebinizin arkasındaki iç görü, arka plan ve bağlamı sağlar.
+- **Açıklama:** ChatGPT'den ne istediğinizi ifade eder.
+- **Kişilik:** ChatGPT'nin nasıl cevap vereceğiyle ilgili stil, kişilik veya tarz.
+- **Deney:** ChatGPT'den size birden fazla örnek sunmasını isteme.
 
-## How to Build Prompts -> CRISPE Example
+## Promptlar Nasıl Oluşturulur -> CRISPE Örneği
 
 <table>
   <tr>
-   <td>Step
+   <td>Adım
    </td>
-   <td>Example Prompt
-   </td>
-  </tr>
-  <tr>
-   <td>Capacity and Role
-   </td>
-   <td>`Act as an expert on software development on the topic of machine learning frameworks, and an expert blog writer.`
+   <td>Örnek Prompt
    </td>
   </tr>
   <tr>
-   <td>Insight
+   <td>Kapasite ve Rol
    </td>
-   <td>`The audience for this blog is technical professionals who are interested in learning about the latest advancements in machine learning.`
-   </td>
-  </tr>
-  <tr>
-   <td>Statement
-   </td>
-   <td>`Provide a comprehensive overview of the most popular machine learning frameworks, including their strengths and weaknesses. Include real-life examples and case studies to illustrate how these frameworks have been successfully used in various industries.`
+   <td>`Makine öğrenimi çerçeveleri konusunda yazı yazmak ve konuda uzman olarak hareket etmek, aynı zamanda bir uzman blog yazarı olarak hareket etmek.`
    </td>
   </tr>
   <tr>
-   <td>Personality
+   <td>Kavrayış
    </td>
-   <td>`When responding, use a mix of the writing styles of Andrej Karpathy, Francois Chollet, Jeremy Howard, and Yann LeCun.`
+   <td>`Bu blogun hedef kitlesi, makine öğrenimi alanındaki en son gelişmeleri öğrenmek isteyen teknik profesyonellerdir.`
    </td>
   </tr>
   <tr>
-   <td>Experiment
+   <td>Açıklama
    </td>
-   <td>`Give me multiple different examples.`
+   <td>`En popüler makine öğrenimi çerçevelerinin kapsamlı bir genel bakışını sağlayın ve bunların güçlü ve zayıf yönlerini dahil edin. Bu çerçevelerin farklı endüstrilerde nasıl başarılı bir şekilde kullanıldığını göstermek için gerçek hayat örnekleri ve vaka çalışmaları da dahil edin.`
+   </td>
+  </tr>
+  <tr>
+   <td>Kişilik
+   </td>
+   <td>`Cevap verirken, Andrej Karpathy, Francois Chollet, Jeremy Howard ve Yann LeCun'un yazı stillerinin bir karışımını kullanın.`
+   </td>
+  </tr>
+  <tr>
+   <td>Deney
+   </td>
+   <td>`Bana birden fazla farklı örnek verin.`
    </td>
   </tr>
 </table>
 
-The final prompt being:
 
-```Act as an expert on software development on the topic of machine learning frameworks, and an expert blog writer. The audience for this blog is technical professionals who are interested in learning about the latest advancements in machine learning. Provide a comprehensive overview of the most popular machine learning frameworks, including their strengths and weaknesses. Include real-life examples and case studies to illustrate how these frameworks have been successfully used in various industries. When responding, use a mix of the writing styles of Andrej Karpathy, Francois Chollet, Jeremy Howard, and Yann LeCun.```
+Bir makine öğrenimi frameworkleri konusunda yazı yazan bir uzman olarak hareket et. Bu blogun hedef kitlesi, makine öğrenimindeki en son gelişmeleri öğrenmek isteyen teknik profesyonellerdir. En popüler makine öğrenimi frameworklerinin kapsamlı bir genel bakışını sağla. Bu frameworklerin güçlü ve zayıf yönlerini belirt. Bu frameworklerin farklı endüstrilerde başarılı bir şekilde kullanıldığını göstermek için gerçek yaşam örnekleri ve vaka çalışmaları ekle. Cevap verirken, Andrej Karpathy, Francois Chollet, Jeremy Howard ve Yann LeCun'un yazı stillerinin bir karışımını kullan. "Başka bir örnek ver" veya "Birden fazla örnek ver" diyerek cevabını çeşitlendirmeni isteyebilirim.
 
-I would refine this by saying `Give me another example` or `Give me multiple examples` and other prompts below (under Prompt Refinement).
 
-## Prompt Refinement: Fixing 'Soulless Writing'
+## Promptu İyileştirme: "Ruhsuz Yazmayı" Düzeltme
 
-- **Encourage creativity:** "Rewrite the existing document to make it more imaginative, engaging, and unique."`
-- **Focus on storytelling:** `"Transform the existing document into a compelling story that highlights the challenges faced and the solutions provided."
-- **Use persuasive language:** `"Refine the existing document by incorporating persuasive language and techniques to make it more convincing and impactful."
-- **Emphasize emotion:** `"Add emotional language and sensory details to the existing document to make it more relatable and engaging."
-- **Utilize sensory details:** `"Refine the existing document by adding sensory details and descriptive language to bring it to life and engage the reader."
-- **Make the content concise:** `"Refine the existing document by removing unnecessary information and making it more concise and to-the-point."
-- **Highlight key points:** `"Rewrite the existing document to emphasize the key points and make them more impactful."
-- **Use vivid language:** `"Refine the existing document by using vivid language and descriptive adjectives to make it more engaging."
-- **Create a sense of urgency:** "Refine the existing document by adding a sense of urgency and emphasizing the need for immediate action."
-- **Address objections:** "Refine the existing document by anticipating and addressing potential objections to the content."
-- **Personalize the content:** "Refine the existing document by personalizing the language and making it more relatable to the reader."
+- **Yaratıcılığı teşvik edin:** "Var olan belgeyi daha yaratıcı, çekici ve benzersiz hale getirmek için yeniden yazın."`
+- **Hikayeye odaklanın:** `"Var olan belgeyi, karşılaşılan zorlukları ve sunulan çözümleri vurgulayan etkileyici bir hikayeye dönüştürün."
+- **İkna edici dil kullanın:** `"Var olan belgeyi, ikna edici dil ve teknikler kullanarak daha ikna edici ve etkileyici hale getirin."
+- **Duyguyu vurgulayın:** `"Var olan belgeye duygusal dil ve duyusal detaylar ekleyerek daha alakalı ve etkileyici hale getirin."
+- **Duyusal detayları kullanın:** `"Var olan belgeyi canlandırmak ve okuyucuyu daha fazla etkilemek için duyusal detaylar ve betimleyici dil ekleyin."
+- **İçeriği özlü hale getirin:** `"Var olan belgeyi gereksiz bilgileri çıkararak daha özlü ve net hale getirin."
+- **Ana noktaları vurgulayın:** `"Var olan belgeyi yeniden yazarak ana noktaları vurgulayın ve daha etkili hale getirin."
+- **Canlı dil kullanın:** `"Var olan belgeyi daha etkileyici hale getirmek için canlı dil ve betimleyici sıfatlar kullanın."
+- **Aciliyet duygusu yaratın:** "ar olan belgeyi, aciliyet duygusu ekleyerek ve hemen harekete geçme ihtiyacını vurgulayarak daha etkili hale getirin."
+- **Objectionları ele alın:** "Var olan belgeyi yeniden düzenleyerek, içeriğe olası itirazları öngörerek ve ele alarak daha etkili hale getirin."
+- **İçeriği kişiselleştirin:** "Var olan belgeyi kişiselleştirerek ve okuyucuyla daha ilişkisel hale getirerek daha etkileyici hale getirin."
 
-## Prompt Refinement: Increase Readability
+## Prompt İyileştirme: Okunabilirliği Artırın
 
-- **Use clear and concise language:** "Explain technical concepts in simple terms."
-- **Add visual aids:** "Using mermaid.js you can include diagrams to illustrate complex concepts (low reliability)."
-- **Use headings and subheadings:** "Divide the document into sections with clear headings and subheadings."
-- **Highlight key points:** "Emphasize important information using bold or italic text."
-- **Add real-life examples:** "Include case studies or real-world examples to make concepts more relatable."
-- **Use clear and consistent formatting:** "Use a consistent font, font size, and layout throughout the document."
-- **Include analogies and comparisons:** "Explain complex ideas using analogies or comparisons."
-- **Use active voice:** "Write in active voice to make sentences more engaging and easier to follow."
+- **Açık ve özlü bir dil kullanın:** "Teknik kavramları basit terimlerle açıklayın."
+- **Görsel yardımcılar ekleyin:** "Karmaşık kavramları açıklamak için mermaid.js kullanarak diyagramlar ekleyebilirsiniz (düşük güvenilirlik)."
+- **Başlıklar ve alt başlıklar kullanın:** "Belgeyi açık başlıklar ve alt başlıklarla bölün."
+- **Anahtar noktaları vurgulayın:** "Önemli bilgileri kalın veya eğik yazı kullanarak vurgulayın."
+- **Gerçek hayat örnekleri ekleyin:** "Kavramları daha anlaşılır hale getirmek için vaka çalışmaları veya gerçek dünya örnekleri ekleyin."
+- **Net ve tutarlı biçimlendirme kullanın:** "Belge boyunca tutarlı bir yazı tipi, yazı tipi boyutu ve düzen kullanın."
+- **Analogi ve karşılaştırmaları kullanın:** "Karmaşık fikirleri analogi veya karşılaştırmalar kullanarak açıklayın."
+- **Eylemli dil kullanın:** "Cümleleri daha etkileyici ve takip etmesi daha kolay hale getirmek için eylemli dil kullanın."
 
 ## Prompts for Web Developers
 
